@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Component/Header.js';
 
 function App() {
+  let data='Hai';
+  let name='Alan';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header  name={name}/>
+      <div>
+        <p style={{color:"red"}}>{data} world</p>
+        
+      </div>
     </div>
   );
 }
 
 export default App;
+
+/* Small component 
+function Small(){
+  return(
+  <div>
+    <h3>Hello world</h3>
+  </div>
+  )
+}*/
